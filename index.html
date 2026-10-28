@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thế giới của tôi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #10131b;
+      color: #f5f5f5;
+    }
+
+    header {
+      padding: 18px 7%;
+      background: #191e2b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    header h2 {
+      color: #8bb7ff;
+      margin: 0;
+    }
+
+    nav a {
+      color: #e1e5ef;
+      text-decoration: none;
+      margin-left: 14px;
+    }
+
+    .hero {
+      padding: 70px 7%;
+      text-align: center;
+      background: linear-gradient(135deg, #202e50, #151923);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 48px);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #c2cada;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 22px;
+      background: #729cff;
+      color: #10131b;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 28px 7% 48px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #1b202c;
+      border: 1px solid #30394c;
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      color: #a9c7ff;
+    }
+
+    .card p {
+      color: #c5cad5;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 22px;
+      text-align: center;
+      color: #9ba4b6;
+      background: #191e2b;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Thế giới của tôi</h2>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#content">Nội dung</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Chào mừng bạn!</h1>
+    <p>
+      Đây là website đầu tiên của tôi.
+      Một góc nhỏ để chia sẻ những điều mình yêu thích.
+    </p>
+    <a class="button" href="#content">Khám phá ngay</a>
+  </section>
+
+  <main id="content">
+    <h2>Nội dung nổi bật</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>🎨 Giới thiệu</h3>
+        <p>Đây là nơi bạn có thể giới thiệu về bản thân hoặc dự án của mình.</p>
+      </article>
+
+      <article class="card">
+        <h3>🌟 Sở thích</h3>
+        <p>Thêm những chủ đề bạn yêu thích, chẳng hạn như anime, truyện hoặc game.</p>
+      </article>
+
+      <article class="card">
+        <h3>🚀 Dự án mới</h3>
+        <p>Bạn có thể phát triển trang web này thành một dự án lớn hơn.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    Website được tạo bằng HTML và CSS.
+  </footer>
+</body>
+  </html>
+  
