@@ -7,21 +7,21 @@
   <title>Wed thứ 2 của tôi | Thư viện anime</title>
   <style>
     :root {
-      --bg: #070b16;
-      --bg-2: #0f172a;
-      --panel: rgba(15, 18, 30, 0.92);
-      --panel-soft: rgba(25, 31, 48, 0.9);
-      --panel-strong: #1a1f31;
-      --text: #f5f3ff;
-      --muted: #b7bed8;
-      --accent: #a78bfa;
-      --accent-2: #ff6fb5;
-      --accent-3: #5eead4;
+      --bg: #070b18;
+      --bg-2: #101a2c;
+      --panel: rgba(15, 18, 30, 0.94);
+      --panel-soft: rgba(18, 27, 41, 0.92);
+      --panel-strong: #151d2e;
+      --text: #f5f7ff;
+      --muted: #bac5ea;
+      --accent: #8b5cf6;
+      --accent-2: #22d3ee;
+      --accent-3: #f472b6;
       --line: rgba(255,255,255,0.08);
-      --glow: rgba(167,139,250,0.35);
-      --shadow: rgba(9, 11, 19, 0.78);
-      --danger: #ff5a8a;
-      --warning: #ffcf6d;
+      --glow: rgba(139, 92, 246, 0.35);
+      --shadow: rgba(8, 11, 18, 0.82);
+      --success: #7df9c7;
+      --warning: #fcd34d;
     }
 
     * { box-sizing: border-box; }
@@ -32,9 +32,9 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(167, 139, 250, 0.28), transparent 28%),
-        radial-gradient(circle at top right, rgba(255, 111, 181, 0.18), transparent 25%),
-        linear-gradient(180deg, #0b1020 0%, #090d1a 40%, #070b16 100%);
+        radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 24%),
+        radial-gradient(circle at top right, rgba(139, 92, 246, 0.22), transparent 26%),
+        linear-gradient(180deg, #0a1020 0%, #070b18 42%, #050912 100%);
       overflow-x: hidden;
     }
 
@@ -47,7 +47,7 @@
         linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
       background-size: 18px 18px;
-      mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+      mask-image: radial-gradient(circle at center, black 58%, transparent 100%);
     }
 
     a { color: inherit; }
@@ -63,7 +63,7 @@
       justify-content: space-between;
       gap: 12px;
       padding: 16px clamp(18px, 5vw, 72px);
-      background: rgba(7, 11, 22, 0.7);
+      background: rgba(7, 11, 24, 0.72);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255,255,255,0.06);
       box-shadow: 0 10px 30px rgba(0,0,0,0.18);
@@ -85,12 +85,12 @@
       display: grid;
       place-items: center;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 14px 28px rgba(167, 139, 250, 0.34);
+      box-shadow: 0 14px 28px rgba(139, 92, 246, 0.38);
       font-size: 1.2rem;
     }
 
     .brand strong { color: #fff; }
-    .brand span { color: var(--accent); }
+    .brand span { color: var(--accent-2); }
 
     .top-link {
       display: inline-flex;
@@ -119,9 +119,9 @@
       align-items: center;
       padding: 7px 12px;
       border-radius: 999px;
-      border: 1px solid rgba(167,139,250,0.35);
-      background: rgba(167,139,250,0.08);
-      color: #dbcfff;
+      border: 1px solid rgba(34, 211, 238, 0.4);
+      background: rgba(34, 211, 238, 0.08);
+      color: #d8f9ff;
       font-size: 0.72rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -137,9 +137,9 @@
     }
 
     h1 em {
-      color: var(--accent);
+      color: var(--accent-2);
       font-style: normal;
-      text-shadow: 0 0 25px rgba(167, 139, 250, 0.35);
+      text-shadow: 0 0 25px rgba(34, 211, 238, 0.3);
     }
 
     .hero p {
@@ -172,9 +172,9 @@
 
     .btn:hover { transform: translateY(-1px); }
     .btn-primary {
-      background: linear-gradient(135deg, #d6c7ff, #9f8af8 52%, #f97bc0);
-      color: #180d26;
-      box-shadow: 0 16px 32px rgba(167,139,250,0.32);
+      background: linear-gradient(135deg, #67e8f9, #8b5cf6 55%, #f472b6);
+      color: #0d1220;
+      box-shadow: 0 16px 32px rgba(139, 92, 246, 0.28);
     }
     .btn-secondary {
       background: rgba(255,255,255,0.04);
@@ -185,10 +185,10 @@
     .feature-panel {
       position: relative;
       padding: 18px;
-      border: 1px solid rgba(167,139,250,0.28);
+      border: 1px solid rgba(139, 92, 246, 0.32);
       border-radius: 24px;
-      background: linear-gradient(180deg, rgba(24, 23, 36, 0.96), rgba(13, 17, 28, 0.9));
-      box-shadow: 0 24px 48px rgba(0,0,0,0.28), 0 0 44px rgba(167,139,250,0.12);
+      background: linear-gradient(180deg, rgba(22, 27, 44, 0.96), rgba(9, 13, 22, 0.94));
+      box-shadow: 0 24px 48px rgba(0,0,0,0.28), 0 0 44px rgba(139,92,246,0.12);
       overflow: hidden;
     }
 
@@ -199,7 +199,7 @@
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,111,181,0.4), transparent 65%);
+      background: radial-gradient(circle, rgba(34, 211, 238, 0.25), transparent 65%);
       filter: blur(14px);
     }
 
@@ -208,7 +208,7 @@
       z-index: 1;
       border-radius: 18px;
       overflow: hidden;
-      background: linear-gradient(180deg, rgba(20, 21, 35, 0.72), rgba(6,9,17,0.82));
+      background: linear-gradient(180deg, rgba(25, 28, 41, 0.72), rgba(8,11,19,0.82));
       border: 1px solid rgba(255,255,255,0.06);
     }
 
@@ -226,8 +226,8 @@
       top: 16px;
       padding: 7px 10px;
       border-radius: 999px;
-      background: rgba(14, 18, 27, 0.7);
-      border: 1px solid rgba(167,139,250,0.28);
+      background: rgba(12, 18, 29, 0.72);
+      border: 1px solid rgba(34,211,238,0.32);
       color: #f1ebff;
       font-size: 0.68rem;
       letter-spacing: 0.08em;
@@ -333,10 +333,10 @@
     }
 
     .filter-chip.active {
-      background: linear-gradient(135deg, rgba(167,139,250,0.18), rgba(255,111,181,0.12));
-      border-color: rgba(167,139,250,0.7);
+      background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(34,211,238,0.12));
+      border-color: rgba(34,211,238,0.6);
       color: #f1ebff;
-      box-shadow: 0 0 30px rgba(167,139,250,0.12);
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.12);
     }
 
     .anime-grid {
@@ -357,8 +357,8 @@
 
     .anime-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(167,139,250,0.78);
-      box-shadow: 0 22px 40px rgba(60, 40, 100, 0.28);
+      border-color: rgba(34,211,238,0.8);
+      box-shadow: 0 22px 40px rgba(34, 211, 238, 0.12);
     }
 
     .poster {
@@ -366,7 +366,7 @@
       aspect-ratio: 3 / 4;
       width: 100%;
       overflow: hidden;
-      background: linear-gradient(135deg, #2b2345, #1a2132);
+      background: linear-gradient(135deg, #1d2540, #0f172a);
     }
 
     .poster img {
@@ -421,9 +421,9 @@
 
     .watch-btn {
       width: 100%;
-      border: 1px solid rgba(167,139,250,0.7);
-      background: linear-gradient(135deg, rgba(114, 90, 221, 0.18), rgba(255,111,181,0.12));
-      color: #efe9ff;
+      border: 1px solid rgba(34,211,238,0.72);
+      background: linear-gradient(135deg, rgba(34,211,238,0.14), rgba(139,92,246,0.14));
+      color: #edfaff;
       border-radius: 10px;
       padding: 10px 12px;
       font-weight: 800;
@@ -431,7 +431,7 @@
     }
 
     .watch-btn:hover {
-      background: linear-gradient(135deg, rgba(114, 90, 221, 0.28), rgba(255,111,181,0.18));
+      background: linear-gradient(135deg, rgba(34,211,238,0.2), rgba(139,92,246,0.18));
     }
 
     .empty-state {
@@ -482,7 +482,7 @@
       display: grid;
       place-items: center;
       border-radius: 10px;
-      background: linear-gradient(135deg, rgba(167,139,250,0.2), rgba(255,111,181,0.1));
+      background: linear-gradient(135deg, rgba(34,211,238,0.18), rgba(139,92,246,0.12));
       color: #d7cbff;
       font-weight: 800;
       margin-bottom: 10px;
@@ -501,8 +501,8 @@
     }
 
     code {
-      background: rgba(167,139,250,0.12);
-      color: #ebdfff;
+      background: rgba(34,211,238,0.12);
+      color: #ebfaff;
       border-radius: 6px;
       padding: 2px 6px;
       font-family: "SFMono-Regular", Consolas, monospace;
@@ -533,7 +533,7 @@
     .modal-box {
       width: min(100%, 930px);
       background: #121722;
-      border: 1px solid rgba(167,139,250,0.25);
+      border: 1px solid rgba(34,211,238,0.24);
       border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 30px 110px rgba(0,0,0,0.58);
